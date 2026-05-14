@@ -1,0 +1,5 @@
+sounddevice
+numpy
+pywin32
+pillow
+winrt-windows.media.control
