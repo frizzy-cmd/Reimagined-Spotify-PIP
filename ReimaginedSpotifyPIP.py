@@ -141,7 +141,7 @@ class CoolAssDecoShit:
         # pawn backend loops
         threading.Thread(target=self.start_async_media_loop, daemon=True).start()
         threading.Thread(target=self.audio_capture_stream, daemon=True).start()
-        threading.Thread(target=self.adapt_to_wallpaper, daemon=True).start()
+        # threading.Thread(target=self.adapt_to_wallpaper, daemon=True).start() sorry mate, deprecated for gaming
         
         self.draw_visualizer_loop()
         self.root.mainloop()
@@ -326,20 +326,20 @@ class CoolAssDecoShit:
             
         self.root.after(16, self.draw_visualizer_loop)
 
-    def adapt_to_wallpaper(self):
-        while True:
-            try:
-                x, y = self.info_mod.win.winfo_x(), self.info_mod.win.winfo_y()
-                w, h = self.info_mod.win.winfo_width(), self.info_mod.win.winfo_height()
-                img = ImageGrab.grab((x, y, x + w, y + h))
-                brightness = ImageStat.Stat(img.convert('L')).mean[0]
+    # def adapt_to_wallpaper(self):
+    #     while True:
+    #         try:
+    #             x, y = self.info_mod.win.winfo_x(), self.info_mod.win.winfo_y()
+    #             w, h = self.info_mod.win.winfo_width(), self.info_mod.win.winfo_height()
+    #             img = ImageGrab.grab((x, y, x + w, y + h))
+    #             brightness = ImageStat.Stat(img.convert('L')).mean[0]
                 
-                self.accent_color = "black" if brightness > 127 else "white"
-                self.sub_color = "#333333" if brightness > 127 else "gray"
+    #             self.accent_color = "black" if brightness > 127 else "white"
+    #             self.sub_color = "#333333" if brightness > 127 else "gray"
                 
-                self.root.after(0, lambda: [self.update_clock(), self.update_info_text()])
-            except Exception: pass
-            time.sleep(1.5)
+    #             self.root.after(0, lambda: [self.update_clock(), self.update_info_text()])
+    #         except Exception: pass
+    #         time.sleep(1.5)
 
 if __name__ == "__main__":
     CoolAssDecoShit()
