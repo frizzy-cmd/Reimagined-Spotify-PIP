@@ -22,7 +22,7 @@ Clone this repository or just grab the standalone .py file, then open your termi
 
 ## ⚠️ General problems
 Problem: Help! I wanna reset back to the default position but i dont know how to!
-- Delete the ```reimaginedpip.json``` file on your Desktop, then relaunch the app.
+- Delete the ```rlayout_settings.json``` file on your Desktop, then relaunch the app.
 
 Problem: How do I close the app? 
 - Just Ctrl + C in your terminal, or open Task Manager and end the ```main``` process.
