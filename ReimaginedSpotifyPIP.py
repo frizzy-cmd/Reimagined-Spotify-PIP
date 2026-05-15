@@ -13,7 +13,7 @@ from PIL import Image, ImageTk, ImageGrab, ImageStat
 from winrt.windows.media.control import GlobalSystemMediaTransportControlsSessionManager as SessionManager
 
 class DraggableModule:
-    """helper class to convert any element into its own separate borderless window with auto-saving"""
+    """Helper class to convert any element into its own separate borderless window with auto-saving."""
     def __init__(self, title, width, height, x, y, resizable=True, on_resize=None, save_callback=None):
         self.win = tk.Toplevel() if title != "main" else tk.Tk()
         self.win.title(title)
@@ -124,8 +124,8 @@ class CoolAssDecoShit:
         self.info_mod = DraggableModule("info_layer", 300, 60, start_x + 220, start_y, resizable=True, on_resize=self.on_info_resize, save_callback=self.save_global_layout)
         self.info_canvas = tk.Canvas(self.info_mod.win, bg=self.bg_color, bd=0, highlightthickness=0)
         self.info_canvas.pack(fill=tk.BOTH, expand=True)
-        self.track_text = "> syncing feeds..."
-        self.artist_text = "  waiting for stream"
+        self.track_text = "> Syncing feeds.."
+        self.artist_text = "  Waiting for stream"
         self.info_mod.setup_bindings(self.info_canvas)
 
         # soundwave window
