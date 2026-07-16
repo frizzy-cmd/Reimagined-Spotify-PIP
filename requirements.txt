@@ -2,4 +2,7 @@ sounddevice
 numpy
 pywin32
 pillow
-winrt-windows.media.control
+winrt-runtime
+winrt-Windows.Foundation
+winrt-Windows.Media
+winrt-Windows.Media.Control
