@@ -1,5 +1,5 @@
-# Reimagined Spotify PIP [Reimagined SPIP]
-**A simple Spotify overlay with tkinter (yes, you heard that right tkinter) that diplays what you are listening to, artist name, song name, artwork cover, time, soundwaves, etc into one beautiful and compact errr space. idk im just typing anything**
+# AquaPIP
+**A simple Spotify overlay with tkinter (yes tkinter) that diplays what you are listening to, artist name, song name, artwork cover, time, soundwaves, etc into one beautiful and compact space. Insert more fancy bs here**
 
 **You can also hold left click to drag the elements, or drag right click to resize. Resizing of the soundwaves is locked to keep stuff stable.**
 
@@ -8,21 +8,21 @@
 ---
 
 # Requirements to get this application:
-- **Python 3.x** installed
+- **Python 3.x** installed [preferrably]
 - A **stereo mix or virtual audio loopback device** enabled in your sound settings [Fancy term for make sure you have a speaker]
 
 # Libraries to get this application:
 ```
-pip install sounddevice numpy pywin32 pillow winrt-windows.media.control
+pip install sounddevice numpy pywin32 pillow winrt-runtime winrt-Windows.Foundation winrt-Windows.Media winrt-Windows.Media.Control
 ```
 # Installation
-Clone this repository or just grab the standalone .py file, then open your terminal in the project directory and run the command to get all required libraries.
+Clone this repository or just grab the standalone .py file, then open your terminal in the project directory and run the command to get all required libraries, Or, you could go to the Releases section and download the prepared .exe
 
 ---
 
 ## ⚠️ General problems
 Problem: Help! I wanna reset back to the default position but i dont know how to!
-- Delete the ```rlayout_settings.json``` file on your Desktop, then relaunch the app.
+- Delete the ```layout_settings.json``` file on your Desktop, then relaunch the app.
 
 Problem: How do I close the app? 
 - Just Ctrl + C in your terminal, or open Task Manager and end the ```main``` process.
