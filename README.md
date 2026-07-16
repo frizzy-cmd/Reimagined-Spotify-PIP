@@ -25,7 +25,7 @@ Problem: Help! I wanna reset back to the default position but i dont know how to
 - Delete the ```layout_settings.json``` file on your Desktop, then relaunch the app.
 
 Problem: How do I close the app? 
-- Just Ctrl + C in your terminal, or open Task Manager and end the ```main``` process.
+- Just Ctrl + C in your terminal, or open Task Manager and end the ```ReimaginedSpotifyPIP.exe``` process under Background processes IF you are using the .exe version.
 
 Problem: I want the app to start on startup
 - Too lazy go edit the py manually
